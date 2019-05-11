@@ -6,4 +6,6 @@
 4- install cookies facility by using npm i cookie-parser
 5- install ejs,ejs mate, body-parser,express-session
 6- complte the requirements in server file
+7- adding new folders in public
+8- creating index.ejs
 
