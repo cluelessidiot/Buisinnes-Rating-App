@@ -1,0 +1,8 @@
+ Steps done during these projects.
+ -------------------------------------------------------------------------------------------------------------------
+1- npm init inside rateme folder
+2- visit npmjs.org and find express
+3- install express by using npm i express --state
+4- install cookies facility by using npm i cookie-parser
+5- install ejs,ejs mate, body-parser,express-session
+6
