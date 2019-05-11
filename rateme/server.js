@@ -16,6 +16,14 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 
+app.use(session({
+    //used to sign session id to cookies,only session id is saved in cookie ,every other saved in db
+    //adding secret allow session data to be used across different pages
+    secret:'Thisismytestkey',
+    resave:false,
+    saveUninitialized: false
+}));
+
 app.get('/',function(req,res,next){
     res.render('index');
 })

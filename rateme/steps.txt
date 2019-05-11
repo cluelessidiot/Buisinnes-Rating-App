@@ -8,4 +8,5 @@
 6- complte the requirements in server file
 7- adding new folders in public
 8- creating index.ejs
-
+9- running srver and testing
+--this to learn - middle ware, express session ,about commands in server.js
