@@ -5,4 +5,5 @@
 3- install express by using npm i express --state
 4- install cookies facility by using npm i cookie-parser
 5- install ejs,ejs mate, body-parser,express-session
-6
+6- complte the requirements in server file
+
