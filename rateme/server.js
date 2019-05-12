@@ -29,10 +29,7 @@ app.use(session({
    //without this store when we refresh our page data will be destroyed 
     store: new MongoStore({mongooseConnection:mongoose.connection })
 }));
-
-app.get('/',function(req,res,next){
-    res.render('index');
-})
+require('./routes/user')(app);
 
 app.get('/test',function(req,res,next){
     res.render('test');
