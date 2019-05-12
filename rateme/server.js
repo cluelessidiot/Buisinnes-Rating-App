@@ -3,10 +3,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ejs = require('ejs');
 var engine = require('ejs-mate');
-//express session api
+//express session api  
 var session = require ('express-session');
 var MongoStore = require('connect-mongo')(session);
-
+var mongoose = require('mongoose');
 var app = express();
 //we declare public folder as static ,so we have acces to allfolder inide it
 app.use(express.static('public'));
