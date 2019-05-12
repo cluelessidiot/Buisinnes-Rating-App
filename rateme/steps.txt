@@ -15,3 +15,9 @@
     -> creating partials folder in views
     -> creating header.ejs in partial
     -> creating doctype in layout.ejs
+    -> linking layout with index
+    -> making use if ejs to use written code
+12- read about passport documentation by vivsiting passportjs.org website
+    ->paspport is an authentication software for node js
+    -> as famous as expressjs
+    ->authentication middleware
