@@ -26,7 +26,7 @@ app.use(session({
     secret:'Thisismytestkey',
     resave:false,
     saveUninitialized: false,
-   //without this store when we refresh our page data will be destroyed
+   //without this store when we refresh our page data will be destroyed 
     store: new MongoStore({mongooseConnection:mongoose.connection })
 }));
 

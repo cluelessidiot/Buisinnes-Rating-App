@@ -10,3 +10,8 @@
 8- creating index.ejs
 9- running srver and testing
 --this to learn - middle ware, express session ,about commands in server.js
+10- adding mongostore features
+11- adding ejs mate features 
+    -> creating partials folder in views
+    -> creating header.ejs in partial
+    -> creating doctype in layout.ejs
