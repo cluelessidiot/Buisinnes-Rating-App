@@ -3,6 +3,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ejs = require('ejs');
 var engine = require('ejs-mate');
+//express session api
 var session = require ('express-session');
 var MongoStore = require('connect-mongo')(session);
 
