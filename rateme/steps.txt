@@ -21,3 +21,6 @@
     ->paspport is an authentication software for node js
     -> as famous as expressjs
     ->authentication middleware
+13- Added login and signup page
+14- added dev dependencies node demon for automatic running of server when server side changes
+15-
