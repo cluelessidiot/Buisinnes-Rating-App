@@ -8,6 +8,9 @@ var session = require ('express-session');
 var MongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 var app = express();
+
+//to create a data base,we use mongoose.connect() if we are using only one data base,if we want to use several connection we can use mongoose.createconnection
+mongoose.connect('mongodb://localhost/rateme');
 //we declare public folder as static ,so we have acces to allfolder inide it
 app.use(express.static('public'));
 app.engine('ejs',engine);
@@ -22,7 +25,9 @@ app.use(session({
     //adding secret allow session data to be used across different pages
     secret:'Thisismytestkey',
     resave:false,
-    saveUninitialized: false
+    saveUninitialized: false,
+   //without this store when we refresh our page data will be destroyed
+    store: new MongoStore({mongooseConnection:mongoose.connection })
 }));
 
 app.get('/',function(req,res,next){
